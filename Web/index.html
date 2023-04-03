@@ -57,7 +57,7 @@
             numarr = numbers.value.split(" ")
             numarr = numarr.map((val)=>parseInt(val))
             console.log(numarr)
-			fetch("http://54.84.104.85:8081/process-image", {
+			fetch("http://54.84.104.85:8082/process-image", {
 				method: "POST",
 				body: JSON.stringify({ name:name.value?name.value:"Default",surname:surname.value?surname.value:"Default",numbers:numarr,image: imageData }),
 				headers: {
