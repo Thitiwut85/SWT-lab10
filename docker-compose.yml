@@ -1,0 +1,13 @@
+services:
+  web:
+    build: ./Web
+    image: thitiwut85/image-frontend:lastest
+    ports:
+      - "8081:80"
+    container_name: frontend
+  server:
+    build: ./Server
+    image: thitiwut85/image-backend:lastest
+    ports:
+      - "8082:80"
+    container_name: backend
